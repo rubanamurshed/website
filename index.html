@@ -5,263 +5,149 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rubana Murshed | Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- ===== Navigation bar ===== -->
-<ul class="nav-links">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="research.html">Research</a></li>
-  <li><a href="industry.html">Industry</a></li>
-  <li><a href="interests.html">Interests</a></li>
-  <li><a href="blog.html">Blog</a></li>
-</ul>
-  <!-- ===== Hero section ===== -->
-  <main>
-  <!-- ===== Hero section ===== -->
-  <section id="hero" class="hero">
-    <div class="container">
-      <h1>Rubana Murshed</h1>
-      <p>
-        Behavioural neuroscience researcher specializing in neuroimaging, 
-        cognitive neuroscience, and data-driven analysis.
-      </p>
-      <div class="hero-buttons">
-        <a href="research.html" class="btn" btn-primary>View Research</a>
-        <a href="#contact" class="btn btn-secondary">Contact Me</a>
-      </div>
-    </div>
-  </section>
 
-  <!-- ===== Quick About ===== -->
-  <section class="section">
-    <div class="container">
-      <h2>Welcome</h2>
-      <p>
-        I'm a behavioural neuroscience researcher based in Montréal, working at the 
-        Douglas Research Centre exploring brain-behavior relationships through 
-        neuroimaging and cognitive neuroscience.
-      </p>
-    </div>
-  </section>
-
-  <!-- ===== Contact section ===== -->
-  <section id="contact" class="section section-alt">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>
-        The easiest way to reach me is by email:
-        <a href="mailto:rubana.mursh@gmail.com">rubana.mursh@gmail.com</a>
-      </p>
-      <p>You can also find me on:</p>
-      <ul class="contact-links">
-        <li><a href="https://www.linkedin.com/in/rubanamurshed" target="_blank">LinkedIn</a></li>
-        <li><a href="tel:4383651909">Phone: (438) 365-1909</a></li>
+  <!-- ===== Navigation ===== -->
+  <header class="site-header">
+    <nav class="nav">
+      <div class="logo"><a href="index.html">RM</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="industry.html">Industry</a></li>
+        <li><a href="interests.html">Interests</a></li>
+        <li><a href="blog.html">Blog</a></li>
       </ul>
-      <p class="location">📍 Montréal, Quebec, Canada</p>
-    </div>
-  </section>
-</main>
+    </nav>
+  </header>
 
-    <!-- ===== About section ===== -->
-    <section id="about" class="section">
+  <main>
+
+    <!-- ===== SECTION 1: Hero ===== -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <span class="hero-tag">Welcome to my portfolio</span>
+          <h1>Hi, I'm<br><em>Rubana.</em></h1>
+          <p class="hero-sub">
+            Behavioural neuroscience researcher specializing in neuroimaging, 
+            cognitive neuroscience, and data-driven analysis — based in Montréal.
+          </p>
+          <div class="hero-buttons">
+            <a href="research.html" class="btn btn-primary">View Research</a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-accent">
+          <div class="accent-blob blob-1"></div>
+          <div class="accent-blob blob-2"></div>
+          <div class="hero-badge">
+            <span class="badge-line">🧠 Neuroscience</span>
+            <span class="badge-line">📍 Montréal</span>
+            <span class="badge-line">🔬 Douglas Research Centre</span>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint">scroll ↓</div>
+    </section>
+
+    <!-- ===== SECTION 2: About + Projects ===== -->
+    <section class="about-projects" id="about">
       <div class="container">
-        <h2>About</h2>
-        <p>
-          I'm a behavioural neuroscience researcher based in Montréal, QC, 
-          driven by curiosity and grounded in data. Currently, I work at the 
-          Douglas Research Centre with Dr. Mallar Chakravarty's CoBrA Lab 
-          (touchscreen cognitive testing in mice) and the CRISP Lab with 
-          Dr. Delphine Raucher-Chêné (neuroimaging in schizophrenia and psychosis).
-        </p>
-        <p>
-          With a background in psychology and biomedical sciences from McGill, 
-          I've explored brain-behavior relationships through hands-on work in 
-          labs studying motivation, memory, and neuroimaging. My research 
-          interests include stress-related neural circuits, cerebral blood flow 
-          analysis (ASL perfusion MRI), predictive processing in psychosis, 
-          and cognitive assessment.
-        </p>
-        <p>
-          While research is my intellectual home, my time in industry at 
-          Lightspeed Commerce and Unity Technologies sharpened valuable skills 
-          in cross-functional collaboration, analytical problem-solving, and 
-          technical communication—bridging the rigors of science with adaptability.
-        </p>
+
+        <div class="about-projects-grid">
+
+          <!-- Left: About -->
+          <div class="about-col">
+            <span class="section-label">About me</span>
+            <h2>Driven by curiosity,<br>grounded in data.</h2>
+            <p>
+              I work at the Douglas Research Centre in Montréal with two labs — 
+              Dr. Chakravarty's CoBrA Lab (touchscreen cognitive testing in mice) 
+              and Dr. Raucher-Chêné's CRISP Lab (neuroimaging in schizophrenia and psychosis).
+            </p>
+            <p>
+              My background spans psychology and biomedical sciences from McGill, 
+              plus industry experience at Lightspeed Commerce and Unity Technologies. 
+              Research is my intellectual home — but I bring the rigour of science 
+              wherever I go.
+            </p>
+            <a href="research.html" class="text-link">Read more about my research →</a>
+          </div>
+
+          <!-- Right: Project circles -->
+          <div class="projects-col">
+            <span class="section-label">Featured projects</span>
+            <div class="project-bubbles">
+
+              <a href="research.html" class="bubble bubble-green">
+                <span class="bubble-title">ASL Perfusion MRI</span>
+                <span class="bubble-sub">Cerebral blood flow in schizophrenia</span>
+              </a>
+
+              <a href="research.html" class="bubble bubble-pink">
+                <span class="bubble-title">7T fMRI</span>
+                <span class="bubble-sub">Predictive processing in psychosis</span>
+              </a>
+
+              <a href="research.html" class="bubble bubble-yellow">
+                <span class="bubble-title">DeepLabCut</span>
+                <span class="bubble-sub">Pavlovian conditioning in mice</span>
+              </a>
+
+              <a href="research.html" class="bubble bubble-purple">
+                <span class="bubble-title">Brain Connectivity</span>
+                <span class="bubble-sub">Pitch processing in musicians</span>
+              </a>
+
+              <a href="research.html" class="bubble bubble-green bubble-sm">
+                <span class="bubble-title">Memory Systems</span>
+                <span class="bubble-sub">Hippocampal research</span>
+              </a>
+
+              <a href="research.html" class="bubble bubble-pink bubble-sm">
+                <span class="bubble-title">CoBrA Lab</span>
+                <span class="bubble-sub">Touchscreen cognitive testing</span>
+              </a>
+
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
-    <!-- ===== Projects section ===== -->
-    <section id="projects" class="section section-alt">
+    <!-- ===== SECTION 3: Contact ===== -->
+    <section id="contact" class="contact-section">
       <div class="container">
-        <h2>Projects</h2>
-
-        <!-- ===== Project 1 ===== -->
-        <article class="project">
-          <h3>Cerebral Blood Flow in Schizophrenia using ASL Perfusion MRI</h3>
-          <p>
-            Investigating cerebral blood flow patterns in schizophrenia using 
-            arterial spin labeling (ASL) perfusion MRI. Conducted imaging 
-            analyses and processed preliminary results with ASLPrep to better 
-            understand neural mechanisms underlying cognitive symptoms.
-          </p>
-          <p class="project-meta">
-            <strong>Tech / Methods:</strong> ASL perfusion MRI, ASLPrep, 
-            neuroimaging analysis, Python
-          </p>
-        </article>
-
-        <!-- ===== Project 2 ===== -->
-        <article class="project">
-          <h3>Predictive Processing in Psychosis (7T fMRI)</h3>
-          <p>
-            Supporting research on predictive processing in psychosis by 
-            testing and optimizing a cognitive task performed during 7T fMRI 
-            scans. This work aims to understand symptoms such as hallucinations 
-            and delusions through neuroimaging and cognitive neuroscience.
-          </p>
-          <p class="project-meta">
-            <strong>Tech / Methods:</strong> 7T fMRI, cognitive task design, 
-            PsychoPy, neuroimaging
-          </p>
-        </article>
-
-        <!-- ===== Project 3 ===== -->
-        <article class="project">
-          <h3>Dual-Valence Pavlovian Conditioning in Mice</h3>
-          <p>
-            Final year undergraduate thesis at the Bagot Lab investigating 
-            appetitive and aversive learning in mice using a novel dual-valence 
-            Pavlovian conditioning paradigm. Applied machine learning 
-            (DeepLabCut) for behavioral analysis to understand risk factors 
-            for stress-related disorders.
-          </p>
-          <p class="project-meta">
-            <strong>Tech / Methods:</strong> Python, DeepLabCut, Pavlovian 
-            conditioning, behavioral neuroscience, chronic social defeat stress
-          </p>
-        </article>
-
-        <!-- ===== Project 4 ===== -->
-        <article class="project">
-          <h3>Musician Advantages in Pitch Processing: Brain Connectivity</h3>
-          <p>
-            ARIA-funded research project analyzing how frequency-following 
-            responses (FFRs) and functional connectivity differentiate pitch 
-            processing in musicians vs. non-musicians. Used MATLAB and 
-            Brainstorm for fMRI analysis and functional connectivity analysis.
-          </p>
-          <p class="project-meta">
-            <strong>Tech / Methods:</strong> MATLAB, Brainstorm, fMRI, 
-            functional connectivity analysis (FCA), FFR
-          </p>
-        </article>
-
-        <!-- ===== Project 5 ===== -->
-        <article class="project">
-          <h3>Hippocampal vs. Non-Hippocampal Dependent Memory</h3>
-          <p>
-            Research project at the Coffey Lab exploring differences between 
-            hippocampal and non-hippocampal memory systems and the role of 
-            sleep events in memory consolidation.
-          </p>
-          <p class="project-meta">
-            <strong>Tech / Methods:</strong> MATLAB, behavioral analysis, 
-            sleep research
-          </p>
-        </article>
-
-        <!-- ===== Project 6 ===== -->
-        <article class="project">
-          <h3>Touchscreen Cognitive Testing in Mice</h3>
-          <p>
-            Research technician work at the CoBrA Lab conducting 
-            touchscreen-based cognitive testing in mice, including training, 
-            task execution, behavioral monitoring, and data processing using 
-            Python and lab-specific analysis pipelines.
-          </p>
-          <p class="project-meta">
-            <strong>Tech / Methods:</strong> Python, behavioral neuroscience, 
-            animal handling (CMARC-certified), cognitive testing
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <!-- ===== Skills section ===== -->
-    <section id="skills" class="section">
-      <div class="container">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-          <div class="skills-group">
-            <h3>Neuroimaging & Analysis</h3>
-            <ul>
-              <li>fMRI analysis (MATLAB, Brainstorm)</li>
-              <li>ASL perfusion MRI (ASLPrep)</li>
-              <li>7T fMRI experimental design</li>
-              <li>Functional Connectivity Analysis (FCA)</li>
-              <li>Frequency-Following Responses (FFR)</li>
-              <li>BIDS data organization</li>
-            </ul>
+        <div class="contact-inner">
+          <div class="contact-text">
+            <span class="section-label">Let's connect</span>
+            <h2>Want to collaborate<br>or just say hi?</h2>
+            <p>I'm always open to research collaborations, conversations about neuroscience, or just a friendly chat.</p>
           </div>
-
-          <div class="skills-group">
-            <h3>Behavioral Neuroscience</h3>
-            <ul>
-              <li>Rodent behavioral paradigms</li>
-              <li>CMARC-certified mice handling (Tier II)</li>
-              <li>Pavlovian conditioning</li>
-              <li>Touchscreen cognitive testing</li>
-              <li>Chronic social defeat stress</li>
-              <li>Social interaction tests</li>
-              <li>Daily husbandry & welfare monitoring</li>
-            </ul>
-          </div>
-
-          <div class="skills-group">
-            <h3>Programming & Data</h3>
-            <ul>
-              <li>Python (behavioral analysis, neuroimaging)</li>
-              <li>MATLAB (data analysis, Brainstorm)</li>
-              <li>DeepLabCut (machine learning)</li>
-              <li>Bash (workflow automation)</li>
-              <li>SPSS (statistical analysis)</li>
-              <li>REDCap, Excel (data management)</li>
-            </ul>
-          </div>
-
-          <div class="skills-group">
-            <h3>Research & Communication</h3>
-            <ul>
-              <li>Experimental design</li>
-              <li>Cognitive task design (PsychoPy)</li>
-              <li>Quantitative research methods</li>
-              <li>Scientific writing & presentations</li>
-              <li>Cross-functional collaboration</li>
-              <li>Critical thinking & problem-solving</li>
-            </ul>
+          <div class="contact-links-wrap">
+            <a href="mailto:rubana.mursh@gmail.com" class="contact-card">
+              <span class="contact-icon">✉️</span>
+              <span>rubana.mursh@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/rubanamurshed" target="_blank" class="contact-card">
+              <span class="contact-icon">💼</span>
+              <span>LinkedIn</span>
+            </a>
+            <div class="contact-card contact-location">
+              <span class="contact-icon">📍</span>
+              <span>Montréal, Quebec, Canada</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== Contact section ===== -->
-    <section id="contact" class="section section-alt">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>
-          The easiest way to reach me is by email:
-          <a href="mailto:rubana.mursh@gmail.com">rubana.mursh@gmail.com</a>
-        </p>
-        <p>
-          You can also find me on:
-        </p>
-        <ul class="contact-links">
-          <li><a href="https://www.linkedin.com/in/rubanamurshed" target="_blank">LinkedIn</a></li>
-          <li><a href="tel:4383651909">Phone: (438) 365-1909</a></li>
-        </ul>
-        <p class="location">📍 Montréal, Quebec, Canada</p>
-      </div>
-    </section>
   </main>
 
   <!-- ===== Footer ===== -->
@@ -270,10 +156,6 @@
       <p>&copy; 2026 Rubana Murshed</p>
     </div>
   </footer>
-</body>
-</html>
 
-<!-- ===== JavaScript ===== -->
-<script src="script.js"></script>
 </body>
 </html>
