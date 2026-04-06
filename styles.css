@@ -609,3 +609,15 @@ a  { color: var(--accent); }
   white-space: nowrap !important;
   width: 100% !important;
 }
+
+/* ===== H1 SIZE FIX ===== */
+.hero-left h1 {
+  font-size: clamp(2.8rem, 4.5vw, 5rem) !important;
+  line-height: 1.08 !important;
+  white-space: normal !important;
+}
+
+.hero-left {
+  max-width: 50% !important;
+  flex: 0 0 50% !important;
+}
