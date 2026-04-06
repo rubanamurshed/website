@@ -794,3 +794,26 @@ a  { color: var(--accent); }
   border-radius: 0 !important;
   background: transparent !important;
 }
+
+/* ===== TALLER HEADER ===== */
+.nav {
+  padding: 1.8rem 4rem !important;
+}
+
+.logo a {
+  font-size: 1.8rem !important;
+}
+
+.nav-links a {
+  font-size: 0.95rem !important;
+}
+
+.nav-email {
+  font-size: 0.9rem !important;
+}
+
+/* ===== WIDER HEADER PADDING ===== */
+.nav {
+  padding: 1.8rem 2rem !important;
+  max-width: 100% !important;
+}
