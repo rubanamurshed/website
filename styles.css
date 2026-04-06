@@ -817,3 +817,28 @@ a  { color: var(--accent); }
   padding: 1.8rem 2rem !important;
   max-width: 100% !important;
 }
+
+/* ===== BIG NAV LINKS + REMOVE LOGO ===== */
+.logo { display: none !important; }
+
+.nav {
+  justify-content: space-between !important;
+}
+
+.nav-links {
+  flex: unset !important;
+  justify-content: unset !important;
+  gap: 3rem !important;
+}
+
+.nav-links a {
+  font-size: 1.5rem !important;
+  font-family: var(--font-head) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+.nav-email {
+  font-size: 0.85rem !important;
+}
