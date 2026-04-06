@@ -739,3 +739,58 @@ a  { color: var(--accent); }
 
 /* ===== REMOVE BADGE ===== */
 .hero-badge { display: none !important; }
+
+/* ===== FINAL FIXES ===== */
+/* Wider layout */
+:root {
+  --max: 1300px !important;
+}
+
+.hero {
+  max-width: 1300px !important;
+  padding: 4rem 4rem !important;
+}
+
+.nav {
+  max-width: 1300px !important;
+  padding: 1.1rem 4rem !important;
+}
+
+.container {
+  max-width: 1300px !important;
+  padding: 0 4rem !important;
+}
+
+/* Remove ALL background/border from image card */
+.hero-right {
+  flex: 0 0 440px !important;
+  height: 480px !important;
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.hero-circle {
+  width: 100% !important;
+  height: 100% !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: visible !important;
+}
+
+.hero-circle .circle-photo {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  padding: 0 !important;
+  position: static !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
