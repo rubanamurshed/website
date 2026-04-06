@@ -721,3 +721,21 @@ a  { color: var(--accent); }
   right: 16px !important;
   z-index: 3 !important;
 }
+
+/* ===== HERO IMAGE: SEAMLESS WHITE BLEND ===== */
+.hero-pills { display: none !important; }
+
+.hero-circle {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.hero-circle .circle-photo {
+  padding: 0 !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+}
+
+/* ===== REMOVE BADGE ===== */
+.hero-badge { display: none !important; }
