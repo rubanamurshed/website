@@ -566,3 +566,46 @@ a  { color: var(--accent); }
 
 /* Remove old stats from what-section */
 .stats-row { display: none; }
+
+/* ===== HERO ALIGNMENT MATCHES FULL-WIDTH HEADER ===== */
+.hero {
+  max-width: 100% !important;
+  padding: 5rem 3rem 4rem !important;
+}
+
+.hero-layout,
+.hero-inner {
+  max-width: 100% !important;
+}
+
+/* Big two-line h1 fills the width like the purple rectangle */
+.hero-left {
+  max-width: 55% !important;
+}
+
+.hero-left h1 {
+  font-size: clamp(3.5rem, 7vw, 7rem) !important;
+  line-height: 1.05 !important;
+  margin-bottom: 2rem !important;
+}
+
+/* Sub-content (desc, email, stats) aligns to same left edge */
+.hero-desc,
+.hero-cta-row,
+.hero-stats {
+  padding-left: 0 !important;
+  max-width: 520px;
+}
+
+/* ===== H1 FILLS FULL LEFT COLUMN WIDTH ===== */
+.hero-left {
+  max-width: 58% !important;
+  flex: 0 0 58% !important;
+}
+
+.hero-left h1 {
+  font-size: clamp(4rem, 8.5vw, 9rem) !important;
+  line-height: 1.0 !important;
+  white-space: nowrap !important;
+  width: 100% !important;
+}
