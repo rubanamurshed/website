@@ -626,3 +626,13 @@ a  { color: var(--accent); }
 .hero {
   padding: 5rem 6rem 4rem !important;
 }
+
+/* ===== HERO COLUMNS CLOSER TOGETHER ===== */
+.hero {
+  gap: 1rem !important;
+  justify-content: center !important;
+}
+
+.hero-right {
+  flex: 0 0 380px !important;
+}
