@@ -496,3 +496,73 @@ a  { color: var(--accent); }
   .nav-links { gap: 1rem; flex-wrap: wrap; justify-content: center; }
   .nav-email { display: none; }
 }
+
+/* ===== HERO STATS ROW ===== */
+.hero-stats {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.hero-stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.stat-num {
+  font-family: var(--font-head);
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: var(--text);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Remove old single stat */
+.hero-stat { display: none; }
+
+/* ===== EMAIL RED + CV BUTTON ===== */
+.hero-cta-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-email {
+  color: #e8294a !important;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.hero-email:hover { text-decoration: underline; color: #e8294a !important; }
+
+.btn-cv {
+  display: inline-block;
+  padding: 0.55rem 1.2rem;
+  border-radius: 8px;
+  border: 2px solid #e8294a;
+  color: #e8294a;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.btn-cv:hover {
+  background: #e8294a;
+  color: white;
+}
+
+/* Remove old stats from what-section */
+.stats-row { display: none; }
