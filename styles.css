@@ -621,3 +621,8 @@ a  { color: var(--accent); }
   max-width: 50% !important;
   flex: 0 0 50% !important;
 }
+
+/* ===== HERO CONTENT CENTRED ===== */
+.hero {
+  padding: 5rem 6rem 4rem !important;
+}
