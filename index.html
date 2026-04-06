@@ -7,141 +7,153 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- ===== Navigation ===== -->
   <header class="site-header">
     <nav class="nav">
-      <div class="logo"><a href="index.html">RM</a></div>
+      <div class="logo"><a href="index.html"><em>Portfolio</em></a></div>
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="research.html">Research</a></li>
+        <li><a href="blog.html">Blog</a></li>
         <li><a href="industry.html">Industry</a></li>
         <li><a href="interests.html">Interests</a></li>
-        <li><a href="blog.html">Blog</a></li>
       </ul>
+      <a href="mailto:rubana.mursh@gmail.com" class="nav-email">✉ rubana.mursh@gmail.com</a>
     </nav>
   </header>
 
   <main>
 
-    <!-- ===== SECTION 1: Hero ===== -->
+    <!-- HERO -->
     <section class="hero">
-      <div class="hero-inner">
-        <div class="hero-text">
-          <span class="hero-tag">Welcome to my portfolio</span>
-          <h1>Hi, I'm<br><em>Rubana.</em></h1>
-          <p class="hero-sub">
-            Behavioural neuroscience researcher specializing in neuroimaging, 
-            cognitive neuroscience, and data-driven analysis — based in Montréal.
+      <div class="hero-left">
+        <h1>Hey There,<br>I'm <em>Rubana Murshed</em></h1>
+        <p class="hero-desc">
+          Behavioural neuroscience researcher specializing in neuroimaging
+          and cognitive neuroscience. I love what I do.
+        </p>
+        <a href="mailto:rubana.mursh@gmail.com" class="hero-email">rubana.mursh@gmail.com</a>
+        <div class="hero-stat">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">YEARS RESEARCH</span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-circle">
+          <div class="circle-inner">
+            <div class="circle-pill">🧠 Neuroscience</div>
+            <div class="circle-name">Rubana<br>Murshed</div>
+            <div class="circle-uni">McGill University</div>
+            <div class="circle-pill">🔬 Douglas Research Centre</div>
+          </div>
+        </div>
+        <div class="hero-badge">
+          <div class="badge-avatar">RM</div>
+          <span>Neuroscience<br>Researcher</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT DO I DO -->
+    <section class="what-section">
+      <div class="container">
+        <h2 class="what-title">What do I do?</h2>
+        <div class="what-cols">
+          <p>
+            I conduct behavioural neuroscience research, exploring brain-behaviour 
+            relationships through neuroimaging and cognitive neuroscience. My work 
+            focuses on finding neural mechanisms underlying psychiatric conditions 
+            and creating insights that drive meaningful change.
           </p>
-          <div class="hero-buttons">
-            <a href="research.html" class="btn btn-primary">View Research</a>
-            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-          </div>
+          <p>
+            Through my research projects at the Douglas Research Centre, I collaborate 
+            with experts across disciplines — from mouse behaviour to 7T fMRI in humans 
+            — to better understand how the brain works and how it can break down.
+          </p>
         </div>
-        <div class="hero-accent">
-          <div class="accent-blob blob-1"></div>
-          <div class="accent-blob blob-2"></div>
-          <div class="hero-badge">
-            <span class="badge-line">🧠 Neuroscience</span>
-            <span class="badge-line">📍 Montréal</span>
-            <span class="badge-line">🔬 Douglas Research Centre</span>
+        <div class="stats-row">
+          <div class="stat-item">
+            <span class="stat-big">6+</span>
+            <span class="stat-name">Projects Completed</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-big">2</span>
+            <span class="stat-name">Active Labs</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-big">3+</span>
+            <span class="stat-name">Techniques Mastered</span>
           </div>
         </div>
       </div>
-      <div class="scroll-hint">scroll ↓</div>
     </section>
 
-    <!-- ===== SECTION 2: About + Projects ===== -->
-    <section class="about-projects" id="about">
+    <!-- FEATURED PROJECTS -->
+    <section class="projects-section" id="projects">
       <div class="container">
-
-        <div class="about-projects-grid">
-
-          <!-- Left: About -->
-          <div class="about-col">
-            <span class="section-label">About me</span>
-            <h2>Driven by curiosity,<br>grounded in data.</h2>
-            <p>
-              I work at the Douglas Research Centre in Montréal with two labs — 
-              Dr. Chakravarty's CoBrA Lab (touchscreen cognitive testing in mice) 
-              and Dr. Raucher-Chêné's CRISP Lab (neuroimaging in schizophrenia and psychosis).
-            </p>
-            <p>
-              My background spans psychology and biomedical sciences from McGill, 
-              plus industry experience at Lightspeed Commerce and Unity Technologies. 
-              Research is my intellectual home — but I bring the rigour of science 
-              wherever I go.
-            </p>
-            <a href="research.html" class="text-link">Read more about my research →</a>
-          </div>
-
-          <!-- Right: Project circles -->
-          <div class="projects-col">
-            <span class="section-label">Featured projects</span>
-            <div class="project-bubbles">
-
-              <a href="research.html" class="bubble bubble-green">
-                <span class="bubble-title">ASL Perfusion MRI</span>
-                <span class="bubble-sub">Cerebral blood flow in schizophrenia</span>
-              </a>
-
-              <a href="research.html" class="bubble bubble-pink">
-                <span class="bubble-title">7T fMRI</span>
-                <span class="bubble-sub">Predictive processing in psychosis</span>
-              </a>
-
-              <a href="research.html" class="bubble bubble-yellow">
-                <span class="bubble-title">DeepLabCut</span>
-                <span class="bubble-sub">Pavlovian conditioning in mice</span>
-              </a>
-
-              <a href="research.html" class="bubble bubble-purple">
-                <span class="bubble-title">Brain Connectivity</span>
-                <span class="bubble-sub">Pitch processing in musicians</span>
-              </a>
-
-              <a href="research.html" class="bubble bubble-green bubble-sm">
-                <span class="bubble-title">Memory Systems</span>
-                <span class="bubble-sub">Hippocampal research</span>
-              </a>
-
-              <a href="research.html" class="bubble bubble-pink bubble-sm">
-                <span class="bubble-title">CoBrA Lab</span>
-                <span class="bubble-sub">Touchscreen cognitive testing</span>
-              </a>
-
+        <div class="projects-header">
+          <h2>Featured Projects</h2>
+          <a href="research.html" class="view-all">View All →</a>
+        </div>
+        <div class="projects-grid">
+          <a href="research.html" class="proj-card">
+            <div class="proj-icon green">🧬</div>
+            <div class="proj-info">
+              <span class="proj-cat">Neuroimaging</span>
+              <h3>ASL Perfusion MRI &amp; Schizophrenia</h3>
             </div>
-          </div>
-
+            <span class="proj-arrow">→</span>
+          </a>
+          <a href="research.html" class="proj-card">
+            <div class="proj-icon pink">🧪</div>
+            <div class="proj-info">
+              <span class="proj-cat">Cognitive Neuroscience</span>
+              <h3>Predictive Processing in Psychosis (7T fMRI)</h3>
+            </div>
+            <span class="proj-arrow">→</span>
+          </a>
+          <a href="research.html" class="proj-card">
+            <div class="proj-icon yellow">🐭</div>
+            <div class="proj-info">
+              <span class="proj-cat">Behavioural Neuroscience</span>
+              <h3>Pavlovian Conditioning in Mice</h3>
+            </div>
+            <span class="proj-arrow">→</span>
+          </a>
+          <a href="research.html" class="proj-card">
+            <div class="proj-icon purple">🎵</div>
+            <div class="proj-info">
+              <span class="proj-cat">Brain Connectivity</span>
+              <h3>Pitch Processing in Musicians</h3>
+            </div>
+            <span class="proj-arrow">→</span>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- ===== SECTION 3: Contact ===== -->
-    <section id="contact" class="contact-section">
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
       <div class="container">
-        <div class="contact-inner">
-          <div class="contact-text">
+        <div class="contact-grid">
+          <div>
             <span class="section-label">Let's connect</span>
             <h2>Want to collaborate<br>or just say hi?</h2>
             <p>I'm always open to research collaborations, conversations about neuroscience, or just a friendly chat.</p>
           </div>
-          <div class="contact-links-wrap">
+          <div class="contact-cards">
             <a href="mailto:rubana.mursh@gmail.com" class="contact-card">
-              <span class="contact-icon">✉️</span>
-              <span>rubana.mursh@gmail.com</span>
+              <span>✉️</span> rubana.mursh@gmail.com
             </a>
             <a href="https://www.linkedin.com/in/rubanamurshed" target="_blank" class="contact-card">
-              <span class="contact-icon">💼</span>
-              <span>LinkedIn</span>
+              <span>💼</span> LinkedIn
             </a>
-            <div class="contact-card contact-location">
-              <span class="contact-icon">📍</span>
-              <span>Montréal, Quebec, Canada</span>
+            <div class="contact-card no-hover">
+              <span>📍</span> Montréal, Quebec, Canada
             </div>
           </div>
         </div>
@@ -150,7 +162,6 @@
 
   </main>
 
-  <!-- ===== Footer ===== -->
   <footer class="site-footer">
     <div class="container">
       <p>&copy; 2026 Rubana Murshed</p>
