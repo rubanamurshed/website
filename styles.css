@@ -651,7 +651,7 @@ a  { color: var(--accent); }
   transform: translateY(-50%);
   width: 220px;
   height: 280px;
-  background-image: url('images/stars.jpg');
+  background-image: url('images/stars.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -666,4 +666,42 @@ a  { color: var(--accent); }
 
 .what-section::after {
   right: -80px;
+}
+
+/* ===== MOVE STARS TO CONTACT SECTION ===== */
+.what-section::before,
+.what-section::after {
+  display: none !important;
+}
+
+.contact-section {
+  position: relative !important;
+  overflow: visible !important;
+}
+
+.contact-section::before,
+.contact-section::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 220px;
+  height: 280px;
+  background-image: url('images/stars.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+/* Left side — flipped vertically for variety */
+.contact-section::before {
+  left: -60px;
+  transform: translateY(-50%) rotate(20deg) scaleY(-1);
+}
+
+/* Right side — normal but rotated differently */
+.contact-section::after {
+  right: -60px;
+  transform: translateY(-50%) rotate(-15deg) scaleX(-1);
 }
