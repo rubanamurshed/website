@@ -651,7 +651,7 @@ a  { color: var(--accent); }
   transform: translateY(-50%);
   width: 220px;
   height: 280px;
-  background-image: url('images/stars.jpg');
+  background-image: url('images/stars.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -686,7 +686,7 @@ a  { color: var(--accent); }
   top: 50%;
   width: 220px;
   height: 280px;
-  background-image: url('images/stars.jpg');
+  background-image: url('images/stars.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -704,4 +704,23 @@ a  { color: var(--accent); }
 .contact-section::after {
   right: -60px;
   transform: translateY(-50%) rotate(-15deg) scaleX(-1);
+}
+
+/* ===== FIX STARS FILE NAME ===== */
+.contact-section::before,
+.contact-section::after {
+  background-image: url('images/stars.jpg') !important;
+}
+
+/* ===== REMOVE SECTION DIVIDER LINE ===== */
+.what-section {
+  border-top: none !important;
+}
+
+/* ===== PROJECT ICON IMAGES ===== */
+.proj-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
