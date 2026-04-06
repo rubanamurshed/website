@@ -724,3 +724,64 @@ a  { color: var(--accent); }
   object-fit: cover;
   border-radius: 10px;
 }
+
+/* ===== DIVIDING LINE BACK ===== */
+.what-section {
+  border-top: 1px solid var(--border) !important;
+}
+
+/* ===== BIGGER PROJECT CARDS ===== */
+.projects-grid {
+  grid-template-columns: 1fr 1fr !important;
+  gap: 1.2rem !important;
+}
+
+.proj-card {
+  align-items: flex-start !important;
+  gap: 1.5rem !important;
+  padding: 1.8rem !important;
+}
+
+/* Large featured image */
+.proj-img-wrap {
+  flex-shrink: 0;
+  width: 110px;
+  height: 110px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--bg-soft);
+}
+
+.proj-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.proj-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.proj-info h3 {
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  margin: 0 !important;
+}
+
+.proj-desc {
+  font-size: 0.82rem !important;
+  color: var(--muted) !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+}
+
+.proj-arrow {
+  margin-top: 0.25rem;
+  align-self: flex-start;
+}
+
+/* Hide old emoji icon styles */
+.proj-icon { display: none !important; }
