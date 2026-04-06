@@ -636,3 +636,34 @@ a  { color: var(--accent); }
 .hero-right {
   flex: 0 0 380px !important;
 }
+
+/* ===== STARS DECORATION ===== */
+.what-section {
+  position: relative !important;
+  overflow: visible !important;
+}
+
+.what-section::before,
+.what-section::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 220px;
+  height: 280px;
+  background-image: url('images/stars.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.what-section::before {
+  left: -80px;
+  transform: translateY(-50%) scaleX(-1); /* mirror on left side */
+}
+
+.what-section::after {
+  right: -80px;
+}
