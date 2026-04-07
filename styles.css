@@ -933,3 +933,44 @@ body.blog-page {
   box-shadow: 0 8px 24px rgba(232, 41, 74, 0.35);
   color: white !important;
 }
+
+/* ===== BLOG HERO — SMALLER + MRI.PNG ===== */
+.blog-hero {
+  height: 52vh !important;
+  min-height: 340px !important;
+  background-image: url('images/MRI.jpg') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  /* Rotate the image 90deg to fit landscape via a pseudo trick */
+}
+
+/* Rotate just the image layer using a pseudo element */
+.blog-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('images/MRI.jpg');
+  background-size: cover;
+  background-position: center;
+  transform: rotate(90deg) scaleX(1.6);
+  transform-origin: center center;
+  z-index: 0;
+}
+
+.blog-hero-overlay {
+  z-index: 1 !important;
+}
+
+.blog-hero-content {
+  z-index: 2 !important;
+  padding: 0 6rem !important;
+}
+
+.blog-hero-content h1 {
+  font-size: clamp(3.5rem, 7vw, 7rem) !important;
+}
+
+/* ===== FIX MRI IMAGE FILENAME ===== */
+.blog-hero {
+  background-image: url('images/MRI.jpg') !important;
+}
