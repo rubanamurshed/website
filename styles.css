@@ -1014,3 +1014,8 @@ body.blog-page,
   flex: 0 0 520px !important;
   height: 560px !important;
 }
+
+/* ===== HEADING SIZE FIX ===== */
+.hero-left h1 {
+  font-size: clamp(2.8rem, 4.5vw, 5rem) !important;
+}
