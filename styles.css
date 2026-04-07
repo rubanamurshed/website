@@ -1025,3 +1025,9 @@ body.blog-page,
   font-size: clamp(2.2rem, 3.5vw, 3.8rem) !important;
   line-height: 1.1 !important;
 }
+
+/* ===== CENTRE HERO CONTENT VERTICALLY ===== */
+.hero {
+  align-items: center !important;
+  min-height: calc(100vh - 68px) !important;
+}
