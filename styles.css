@@ -998,3 +998,13 @@ body.blog-page,
   height: 55vh !important;
   min-height: 380px !important;
 }
+
+/* ===== WHITE FOOTER ===== */
+.site-footer {
+  background: #fff !important;
+  border-top: 1px solid var(--border) !important;
+}
+
+.site-footer p {
+  color: var(--muted) !important;
+}
