@@ -654,3 +654,26 @@ body.blog-page .site-footer p { color: rgba(255,255,255,0.3) !important; }
   flex: 0 0 auto !important;
   max-width: 480px !important;
 }
+
+/* ===== FEATURED PROJECTS BACKGROUND ===== */
+.projects-section {
+  background-image: url('images/tumblr.webp') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+  position: relative !important;
+}
+
+/* Dark overlay so text stays readable */
+.projects-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.88);
+  z-index: 0;
+}
+
+.projects-section .container {
+  position: relative;
+  z-index: 1;
+}
