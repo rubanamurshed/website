@@ -625,3 +625,9 @@ body.blog-page .site-footer p { color: rgba(255,255,255,0.3) !important; }
   padding-left: 8rem !important;
   padding-right: 3rem !important;
 }
+
+/* ===== HERO CENTRE ===== */
+.hero {
+  padding-left: 20rem !important;
+  padding-right: 3rem !important;
+}
