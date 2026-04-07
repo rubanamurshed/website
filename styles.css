@@ -992,3 +992,9 @@ body.blog-page,
   background-position: center !important;
   height: 100vh !important;
 }
+
+/* ===== BLOG HERO SHORTER ===== */
+.blog-hero {
+  height: 55vh !important;
+  min-height: 380px !important;
+}
