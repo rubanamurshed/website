@@ -1008,3 +1008,9 @@ body.blog-page,
 .site-footer p {
   color: var(--muted) !important;
 }
+
+/* ===== BIGGER HERO IMAGE ===== */
+.hero-right {
+  flex: 0 0 520px !important;
+  height: 560px !important;
+}
