@@ -631,3 +631,26 @@ body.blog-page .site-footer p { color: rgba(255,255,255,0.3) !important; }
   padding-left: 20rem !important;
   padding-right: 3rem !important;
 }
+
+/* ===== HERO & NAV PROPERLY CENTRED ===== */
+.nav {
+  max-width: 1300px !important;
+  margin: 0 auto !important;
+  padding: 1.4rem 4rem !important;
+  width: 100% !important;
+}
+
+/* Centre the whole hero group */
+.hero {
+  max-width: 1300px !important;
+  margin: 0 auto !important;
+  padding: 0 4rem !important;
+  width: 100% !important;
+  justify-content: center !important;
+  gap: 4rem !important;
+}
+
+.hero-left {
+  flex: 0 0 auto !important;
+  max-width: 480px !important;
+}
