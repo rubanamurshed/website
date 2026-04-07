@@ -938,7 +938,7 @@ body.blog-page {
 .blog-hero {
   height: 52vh !important;
   min-height: 340px !important;
-  background-image: url('images/MRI.jpg') !important;
+  background-image: url('images/MRI.png') !important;
   background-size: cover !important;
   background-position: center center !important;
   /* Rotate the image 90deg to fit landscape via a pseudo trick */
@@ -949,7 +949,7 @@ body.blog-page {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('images/MRI.jpg');
+  background-image: url('images/MRI.png');
   background-size: cover;
   background-position: center;
   transform: rotate(90deg) scaleX(1.6);
@@ -973,4 +973,22 @@ body.blog-page {
 /* ===== FIX MRI IMAGE FILENAME ===== */
 .blog-hero {
   background-image: url('images/MRI.jpg') !important;
+}
+
+/* ===== BLOG PAGE PITCH BLACK + BLOG.JPEG HERO ===== */
+body.blog-page,
+.blog-coming-soon,
+.blog-page .site-footer {
+  background: #000 !important;
+}
+
+.blog-coming-soon {
+  border-top: 1px solid rgba(255,255,255,0.06) !important;
+}
+
+.blog-hero {
+  background-image: url('images/blog.jpeg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  height: 100vh !important;
 }
